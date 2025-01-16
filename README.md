@@ -17,7 +17,23 @@ Este repositório contém uma aplicação fullstack desenvolvida para consolidar
 - **Material-UI**: Conjunto de componentes estilizados e ícones.
 
 ---
+## Funcionalidades Principais
 
+### 1. Gerenciamento de Rotas
+- Navegação dinâmica com proteção condicional para rotas restritas a usuários autenticados.
+
+### 2. Autenticação Centralizada
+- Implementação de um Context API para gerenciar o estado de autenticação e tokens de acesso.
+
+### 3. Validação e Formulários
+- Validação rigorosa com Yup para entradas do usuário.
+- Gerenciamento simplificado de formulários com Formik.
+
+### 4. Integração com APIs
+- Requisições eficientes usando Axios para consumir APIs e realizar operações CRUD.
+- Implementação de autenticação segura nas requisições.
+
+---
 ## Guia para Configuração e Execução
 
 ### Pré-requisitos
@@ -71,20 +87,6 @@ frontend/
 
 ---
 
-## Funcionalidades Principais
 
-### 1. Gerenciamento de Rotas
-- Navegação dinâmica com proteção condicional para rotas restritas a usuários autenticados.
-
-### 2. Autenticação Centralizada
-- Implementação de um Context API para gerenciar o estado de autenticação e tokens de acesso.
-
-### 3. Validação e Formulários
-- Validação rigorosa com Yup para entradas do usuário.
-- Gerenciamento simplificado de formulários com Formik.
-
-### 4. Integração com APIs
-- Requisições eficientes usando Axios para consumir APIs e realizar operações CRUD.
-- Implementação de autenticação segura nas requisições.
 
 Confira o Back-End em [https://github.com/Matheus-Ribeir0/Blog-Sever](https://github.com/Matheus-Ribeir0/Blog-Sever)
