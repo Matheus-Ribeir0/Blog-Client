@@ -44,7 +44,7 @@ Este repositório contém uma aplicação fullstack desenvolvida para consolidar
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/nome-do-repositorio.git
+   git clone https://github.com/Matheus-Ribeir0/Blog-Client
    ```
 
 2. Acesse o diretório do front-end:
