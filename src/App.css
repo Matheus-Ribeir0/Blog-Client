@@ -119,6 +119,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 25px;
 }
 
 .formContainer button:hover {
@@ -242,6 +243,7 @@ button {
   background-color: #e1e8ed;
   height: 20px;
   padding: 5px;
+  outline: none;
 }
 .formContainer label{
   text-align: start; 
@@ -425,6 +427,14 @@ button {
   }
 }
 
+.formContainer .login-button{
+  cursor: wait;
+  
+}
+
+.formContainer .login-button:hover{
+  cursor: wait;
+}
 .loadicon {
   animation: spin 1s linear infinite;
 }
