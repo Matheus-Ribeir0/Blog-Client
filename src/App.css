@@ -106,8 +106,15 @@ body {
   margin-bottom: 15px;
   border: 1px solid #e1e8ed;
   border-radius: 5px;
-  padding-left: 10px;
+  
   font-size: 14px;
+  text-decoration: none;
+  outline: none;
+}
+
+.textarea {
+  padding: 10px;
+  height: 500px;
 }
 
 .formContainer button {
@@ -133,7 +140,7 @@ body {
   height: 60px;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   position: sticky;
@@ -217,25 +224,26 @@ button {
   background-color: #0d95e8;
 }
 
-.registration{
+.registration {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   height: 100vh
 }
 
 .formContainer {
-  width: 400px; /* Ajuste o tamanho da sua div como preferir */
+  width: 400px;
+  /* Ajuste o tamanho da sua div como preferir */
   height: 300px;
   text-align: center;
   padding: 20px;
 }
 
-.formContainer button{
+.formContainer button {
   margin: 0px auto;
 }
 
-.formContainer .login_input{
+.formContainer .login_input {
   margin: 10px auto;
   width: 90%;
   border-radius: 5px;
@@ -245,13 +253,14 @@ button {
   padding: 5px;
   outline: none;
 }
-.formContainer label{
-  text-align: start; 
+
+.formContainer label {
+  text-align: start;
 }
 
 .link {
   text-decoration: none;
-  color: #0d95e8; 
+  color: #0d95e8;
 }
 
 .link:hover {
@@ -338,7 +347,7 @@ button {
   font-size: 12px;
   color: #657786;
   margin-top: 10px;
-  
+
 }
 
 .comment button {
@@ -359,24 +368,26 @@ button {
 
 .heather_container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 
 }
 
-.heather_container .username{
+.heather_container .username {
   font-size: 20px;
-  text-align: center; 
+  text-align: center;
 }
 
 
-.heather_container .logout{
+.heather_container .logout {
   width: 100px;
 }
 
 .post_page {
-  display: flex; /* Ativa o Flexbox */
-  flex-direction: column-reverse; /* Ordena os elementos de baixo para cima */
+  display: flex;
+  /* Ativa o Flexbox */
+  flex-direction: column-reverse;
+  /* Ordena os elementos de baixo para cima */
 }
 
 .delete_button {
@@ -391,14 +402,18 @@ button {
 }
 
 .basicInfo {
-  display: flex; /* Mudei para flex para facilitar o alinhamento */
-  flex-direction: column; /* Organiza os itens na vertical */
-  align-items: center; /* Alinha o conteúdo horizontalmente no centro */
+  display: flex;
+  /* Mudei para flex para facilitar o alinhamento */
+  flex-direction: column;
+  /* Organiza os itens na vertical */
+  align-items: center;
+  /* Alinha o conteúdo horizontalmente no centro */
 }
 
 .basicInfo h1 {
   color: #1da1f2;
-  text-align: center; /* Alinha o texto dentro do h1 */
+  text-align: center;
+  /* Alinha o texto dentro do h1 */
   margin-bottom: 0px;
 }
 
@@ -408,33 +423,37 @@ button {
   border: none;
   text-decoration: underline;
   height: 30px;
-  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Adicionando a transição de background-color */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Adicionando um box-shadow inicial */
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  /* Adicionando a transição de background-color */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  /* Adicionando um box-shadow inicial */
 }
 
 .basicInfo button:hover {
 
   background-color: #0d95e8;
   color: white;
-} 
+}
 
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.formContainer .login-button{
+.formContainer .login-button {
   cursor: wait;
-  
+
 }
 
-.formContainer .login-button:hover{
+.formContainer .login-button:hover {
   cursor: wait;
 }
+
 .loadicon {
   animation: spin 1s linear infinite;
 }

@@ -1,14 +1,15 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import {Formik , Form, Field, ErrorMessage} from 'formik'
 import * as Yup from 'yup'
 import axios from "axios"
 import { useNavigate} from "react-router-dom"
 import { AuthContext } from '../helpers/AuthContext'
+import CircularProgress from '@mui/material/CircularProgress';
 
 function CreatePost() {
   let navigate = useNavigate()
   const { authState } = useContext(AuthContext)
-
+  const [isLoading, setIsLoading] = useState(false)
   useEffect(() => {
     if (!localStorage.getItem("accessToken")){
       navigate("/login")
@@ -28,9 +29,12 @@ function CreatePost() {
 
 
   const onSubmit = (data) => {
+    setIsLoading(true)
     axios.post("https://blog-sever-n5qt.onrender.com/posts", data, { headers: {accessToken: localStorage.getItem("accessToken")}})
     .then((response) => {
       navigate("/")
+      setIsLoading(false)
+        return
     })
   }
 
@@ -42,13 +46,14 @@ function CreatePost() {
 
             <label>Title: </label>
             <ErrorMessage name="title" component="span"/>
-            <Field id="inputCreatePost" name="title" placeholder="(Exemple Jhon)"/>
+            <Field id="inputCreatePost" name="title" placeholder="Post Title"/>
 
             <label>Post: </label>
             <ErrorMessage name="postText" component="span"/>
-            <Field id="inputCreatePost" name="postText" placeholder="(Exemple Post)"/>
+            <Field id="inputCreatePost" className="textarea" as="textarea" name="postText" placeholder="Insert here your post text"/>
 
-            <button type='submit'>Create Post</button>
+            <button type='submit'>
+            {isLoading ? <CircularProgress size={20} color='white' /> : "Create Post"}</button>
           </Form>
 
         </Formik>
