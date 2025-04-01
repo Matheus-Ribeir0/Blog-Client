@@ -6,6 +6,7 @@ import {AuthContext} from '../helpers/AuthContext'
 import { useNavigate} from "react-router-dom"
 import DeleteIcon from '@mui/icons-material/Delete';
 
+
 function Post() {
     let { id } = useParams()
     const [postObject, setPostObject] = useState({})

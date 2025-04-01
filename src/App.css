@@ -415,3 +415,16 @@ button {
   background-color: #0d95e8;
   color: white;
 } 
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadicon {
+  animation: spin 1s linear infinite;
+}
